@@ -11,7 +11,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2
 
 # Ingress für ArgoCD installieren
 ``` 
-kubectl apply -f https://raw.githubusercontent.com/jkleinlercher/suxess-argocd-example/ingress-argocd.yaml -n argocd
+kubectl apply -f https://raw.githubusercontent.com/jkleinlercher/argocd-suxess-example/main/ingress-argocd.yaml -n argocd
 ```
 
 Anmerkung:

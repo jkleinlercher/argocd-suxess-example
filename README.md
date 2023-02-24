@@ -15,6 +15,10 @@ Hier konfigurieren wir dass der ArgoCD-Server "insecure" gestartet wird, damit w
 ```
 kubectl apply -f https://raw.githubusercontent.com/jkleinlercher/argocd-suxess-example/main/argocd-cmd-params-cm.yaml -n argocd
 ```
+Anschließend muss der argocd-server durchgestartet werden:
+```
+kubectl rollout restart deployment argocd-server -n argocd
+```
 # Ingress für ArgoCD installieren
 ``` 
 kubectl apply -f https://raw.githubusercontent.com/jkleinlercher/argocd-suxess-example/main/ingress-argocd.yaml -n argocd

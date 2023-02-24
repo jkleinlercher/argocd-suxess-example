@@ -1,5 +1,7 @@
 # argocd-suxess-example
 
+Eine kleine Anleitung wie man ArgoCD lokal mit k3d installiert und eine Beispiel-Applikation erstellt.
+
 # ArgoCD installieren
 
 für Details siehe auch https://argo-cd.readthedocs.io/en/stable/getting_started/

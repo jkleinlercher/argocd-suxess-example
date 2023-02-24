@@ -42,3 +42,10 @@ dieses Passwort im Browser eingeben
 
 Anmerkung: mit dem Parameter jsonpath kann man bestimmte Felder ausgeben lassen
 
+
+# Why-Kubernetes Applikation deklarativ erzeugen
+
+```
+kubectl apply -f https://raw.githubusercontent.com/jkleinlercher/argocd-suxess-example/main/why-kubernetes-application.yaml -n argocd
+```
+

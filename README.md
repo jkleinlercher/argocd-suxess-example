@@ -50,3 +50,4 @@ kubectl apply -f https://raw.githubusercontent.com/jkleinlercher/argocd-suxess-e
 ```
 
 Anschließend auf die "why-kubernetes" Applikation klicken, dann auf den Button "Sync" klicken und rechts auf den Button "Synchronize" klicken.
+Dann sollte die Applikation über http://why-kubernetes-127-0-0-1.nip.io:8081/ erreichbar sein.

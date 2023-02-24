@@ -47,9 +47,19 @@ Anmerkung: mit dem Parameter jsonpath kann man bestimmte Felder ausgeben lassen
 
 # Why-Kubernetes Applikation deklarativ erzeugen
 
+Achtung: sollte why-kubernetes zuvor bereits ohne ArgoCD erstellt worden sein, sollte das ursprüngliche Deployment, Service und Ingress davor gelöscht werden:
+
+```
+kubectl delete deployment why-kubernetes
+kubectl delete service why-kubernetes
+kubectl delete ingress nginx
+```
+
+ArgoCD Applikationen kann man direkt in der ArgoCD-WebConsole erstellen, aber man kann sie auch deklarativ über eine K8s-CustomResource definieren und mit kubectl anwenden.
+
 ```
 kubectl apply -f https://raw.githubusercontent.com/jkleinlercher/argocd-suxess-example/main/why-kubernetes-application.yaml -n argocd
 ```
 
-Anschließend auf die "why-kubernetes" Applikation klicken, dann auf den Button "Sync" klicken und rechts auf den Button "Synchronize" klicken.
-Dann sollte die Applikation über http://why-kubernetes-127-0-0-1.nip.io:8081/ erreichbar sein.
+Anschließend in der ArgoCD-WebConsole auf die "why-kubernetes" Applikation klicken, dann auf den Button "Sync" klicken und rechts auf den Button "Synchronize" klicken.
+Dann sollten 10 Pods erstellt werden und die Applikation über http://why-kubernetes-127-0-0-1.nip.io:8081/ erreichbar sein.

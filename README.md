@@ -49,3 +49,4 @@ Anmerkung: mit dem Parameter jsonpath kann man bestimmte Felder ausgeben lassen
 kubectl apply -f https://raw.githubusercontent.com/jkleinlercher/argocd-suxess-example/main/why-kubernetes-application.yaml -n argocd
 ```
 
+Anschließend auf die "why-kubernetes" Applikation klicken, dann auf den Button "Sync" klicken und rechts auf den Button "Synchronize" klicken.

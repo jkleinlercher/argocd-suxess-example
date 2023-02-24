@@ -8,7 +8,13 @@ für Details siehe auch https://argo-cd.readthedocs.io/en/stable/getting_started
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.6.2/manifests/install.yaml
 ```
+# ArgoCD ConfigMap erstellen
 
+Hier konfigurieren wir dass der ArgoCD-Server "insecure" gestartet wird, damit wir der Ingress nicht über https auf den ArgoCD-Server zugreifen muss.
+
+```
+kubectl apply -f https://raw.githubusercontent.com/jkleinlercher/argocd-suxess-example/main/argocd-cmd-params-cm.yaml -n argocd
+```
 # Ingress für ArgoCD installieren
 ``` 
 kubectl apply -f https://raw.githubusercontent.com/jkleinlercher/argocd-suxess-example/main/ingress-argocd.yaml -n argocd

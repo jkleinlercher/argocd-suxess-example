@@ -1,7 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: nginx
+  name: argocd-ingress
+  namespace: argocd
   annotations:
     ingress.kubernetes.io/ssl-redirect: "false"
 spec:

@@ -42,7 +42,7 @@ kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath='{.data.pas
 ```
 dieses Passwort im Browser eingeben
 
-Anmerkung: mit dem Parameter jsonpath kann man bestimmte Felder ausgeben lassen
+Anmerkung: mit dem Parameter jsonpath kann man bestimmte Felder ausgeben lassen, siehe https://kubernetes.io/docs/reference/kubectl/jsonpath/
 
 
 # Why-Kubernetes Applikation deklarativ erzeugen

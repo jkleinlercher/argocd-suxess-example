@@ -12,7 +12,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2
 ```
 # ArgoCD ConfigMap erstellen
 
-Hier konfigurieren wir dass der ArgoCD-Server "insecure" gestartet wird, damit wir der Ingress nicht über https auf den ArgoCD-Server zugreifen muss.
+Hier konfigurieren wir, dass der ArgoCD-Server "insecure" gestartet wird, damit der Ingress nicht über https auf den ArgoCD-Server zugreifen muss.
 
 ```
 kubectl apply -f https://raw.githubusercontent.com/jkleinlercher/argocd-suxess-example/main/argocd-cmd-params-cm.yaml -n argocd

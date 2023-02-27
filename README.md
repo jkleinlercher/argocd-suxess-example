@@ -27,7 +27,7 @@ kubectl apply -f https://raw.githubusercontent.com/jkleinlercher/argocd-suxess-e
 ```
 
 Anmerkung:
-https://nip.io/ service ist ein praktischer DNS wo man ohne die /etc/hosts zu faken einfach bestimmte Hostnamen verwenden kann, die von nip.io dann auf irgendwelche IP-Adressen (je nach Hostname) auflösen, z.B. argocd-127-0-0-1.nip.io löst auf 127.0.0.1 auf.
+https://nip.io/  ist ein praktischer DNS wo man beliebige Subdomains von nip.io verwenden kann, die dann auf bestimmte IP-Adressen (je nach Hostname) auflösen, z.B. argocd-127-0-0-1.nip.io löst auf 127.0.0.1 auf. Details siehe https://nip.io/ . Damit spart man sich das Faken von DNS-Einträgen in der etc/hosts.
 
 # ArgoCD aufrufen
 
